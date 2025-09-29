@@ -12,7 +12,52 @@ $base = app_base_url();
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
 <style>
-	body { font-family: 'Roboto', Arial, sans-serif; background: #f8f9fa; }
+		body { font-family: 'Roboto', Arial, sans-serif; background: linear-gradient(120deg, #f8f9fa 60%, #e3f0ff 100%); }
+	.dashboard-card {
+		transition: transform 0.2s, box-shadow 0.2s;
+		border: none;
+		border-radius: 1rem;
+		box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+		background: #fff;
+		position: relative;
+		overflow: hidden;
+	}
+	.dashboard-card:hover {
+		transform: translateY(-6px) scale(1.03);
+		box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+		z-index: 2;
+	}
+	.dashboard-icon {
+		font-size: 2.5rem;
+		color: #0d6efd;
+		margin-bottom: 10px;
+		display: block;
+	}
+	.dashboard-card .card-body {
+		text-align: center;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+	.dashboard-card .card-title {
+		font-weight: 600;
+		font-size: 1.2rem;
+	}
+	.dashboard-card .card-text {
+		color: #6c757d;
+	}
+	.dashboard-card .dashboard-arrow {
+		position: absolute;
+		right: 1.2rem;
+		bottom: 1.2rem;
+		font-size: 1.3rem;
+		color: #ffc107;
+		opacity: 0.7;
+		transition: opacity 0.2s;
+	}
+	.dashboard-card:hover .dashboard-arrow {
+		opacity: 1;
+	}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 	.navbar-brand { font-weight: 700; letter-spacing: 1px; }
 	.navbar { box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
 	.main-footer { background: #212529; color: #fff; padding: 24px 0 12px 0; text-align: center; margin-top: 48px; }

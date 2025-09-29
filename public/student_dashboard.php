@@ -11,26 +11,32 @@ require_once __DIR__ . '/../templates/header.php';
 	</div>
 	<div class="row g-4">
 		<div class="col-md-4">
-			<a class="card text-decoration-none shadow-sm h-100" href="<?php echo app_base_url(); ?>/student_profile.php">
+			<a class="dashboard-card card text-decoration-none h-100" href="<?php echo app_base_url(); ?>/student_profile.php">
 				<div class="card-body">
+					<span class="dashboard-icon"><i class="fa-solid fa-user-graduate"></i></span>
 					<h5 class="card-title">My Profile</h5>
 					<p class="card-text">Resume, cover letter, skills</p>
+					<span class="dashboard-arrow"><i class="fa-solid fa-arrow-right"></i></span>
 				</div>
 			</a>
 		</div>
 		<div class="col-md-4">
-			<a class="card text-decoration-none shadow-sm h-100" href="<?php echo app_base_url(); ?>/internships_browse.php">
+			<a class="dashboard-card card text-decoration-none h-100" href="<?php echo app_base_url(); ?>/internships_browse.php">
 				<div class="card-body">
+					<span class="dashboard-icon"><i class="fa-solid fa-briefcase"></i></span>
 					<h5 class="card-title">Find Internships</h5>
 					<p class="card-text">Browse & one-click apply</p>
+					<span class="dashboard-arrow"><i class="fa-solid fa-arrow-right"></i></span>
 				</div>
 			</a>
 		</div>
 		<div class="col-md-4">
-			<a class="card text-decoration-none shadow-sm h-100" href="<?php echo app_base_url(); ?>/applications_student.php">
+			<a class="dashboard-card card text-decoration-none h-100" href="<?php echo app_base_url(); ?>/applications_student.php">
 				<div class="card-body">
+					<span class="dashboard-icon"><i class="fa-solid fa-file-lines"></i></span>
 					<h5 class="card-title">Applications</h5>
 					<p class="card-text">Status & interview schedule</p>
+					<span class="dashboard-arrow"><i class="fa-solid fa-arrow-right"></i></span>
 				</div>
 			</a>
 		</div>
