@@ -6,7 +6,7 @@ if ($user) {
 $role = $user['role'];
 redirect_to("{$role}_dashboard.php");
 }
-?>
+
 require_once __DIR__ . '/../templates/header.php';
 ?>
 <div class="d-flex flex-column align-items-center justify-content-center" style="min-height:60vh;">

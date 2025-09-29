@@ -2,7 +2,6 @@
 require_once __DIR__ . '/../config/auth.php';
 require_login(['employer']);
 $user = current_user();
-?>
 require_once __DIR__ . '/../templates/header.php';
 ?>
 <div class="container">
